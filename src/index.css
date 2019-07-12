@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.value_input1 {
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+.card_box {
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.card {
+	position:relative;
+	width: 428px;
+	height: 263px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+	background: rgb(255, 234, 233);
+	padding: 10px 40px;
+	z-index: 1110;
+}
+
+.card-chip {
+	margin-top: 30px;
+	width: 70px;
+	height: 70px;
+}
+
+.chip-bg {
+	background: linear-gradient(-90deg, red, yellow);
+}
+
+.card_back{
+	position: absolute;
+	width: 428px;
+	height: 253px;
+	padding-top: 30px;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-left:220px;
+	z-index: 0;
+	background: rgb(255, 137, 129);
+}
+
+.date_label {
+	width: 100%;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.date_label .desc{
+	font-size: 10px;
+}
+
+.black_line {
+	width: 100%;
+	height: 50px;
+	background: black;
+}
+
+input.form-control {
+	font-size: 22px;
+	width:100%;
+	border-radius: 10px 0 0 0;
+	border:none;
+	padding:5px 0px 5px 10px;
+	word-spacing: 30px;
+	letter-spacing: 5px;
+}
+
+input#date.form-control {
+	word-spacing: 0;
+	letter-spacing: 2px;
+}
+
+input#cvv.form-control {
+	margin-top: 10px;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+
+input.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+input.form-control::-moz-placeholder { /* Firefox 19+ */
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+input.form-control:-ms-input-placeholder { /* IE 10+ */
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+input.form-control:-moz-placeholder { /* Firefox 18- */
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+.visa_logo {
+	height: 40px;
+	max-width: 100%;
+}
+
+.error {
+	color: #e80016;
+	padding: 20px;
+}
+
+input#holder_name.form-control {
+	  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+input.form-control:focus {
+	outline:none;
+	border-bottom: 2px solid;
+    margin-bottom: -2px;
+}
+
+.card_box div.grid-row {
+	padding-bottom:20px;
+}
+
+.pay-content {
+		max-width: 680px;
+}
+
+@media only screen and (max-width: 850px) {
+
+	.card {
+		width: inherit;
+		height: 250px;
+		border-radius: 20px 0px 0 0;
+		box-shadow: none;
+
+	}
+
+	.card-chip {
+		margin-top: 10px;
+		width: 50px;
+		height: 50px;
+	}
+
+	.card_back{
+		width: 100%;
+		height: 80px;
+		position:absolute;
+		display:inline-block;
+		border-radius: 0px 0px 0px 20px;
+		margin-top: 250px;
+		margin-left:0px;
+		z-index: 0;
+		background: rgb(255, 137, 129);
+	}
+
+	.black_line {
+		display:none;
+	}
+
+	input.form-control {
+		font-size: 22px;
+		width:100%;
+		border-radius: 10px 0 0 0;
+		border:none;
+		padding:5px 0px 5px 10px;
+		word-spacing: 10px;
+		letter-spacing: 0;
+	}
+
+	input.form-control {
+		font-size: 22px;
+		width:100%;
+	}
+
+	.visa_logo {
+		display:none;
+	}
+
+	button.subm-btn {
+		margin-left:30px;
+	}
+
+	.error {
+		color: #e80016;
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+}
